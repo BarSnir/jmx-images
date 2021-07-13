@@ -2,7 +2,7 @@ lowercaseOutputName: true
 lowercaseOutputLabelNames: true
 ssl: false
 whitelistObjectNames:
-- io.confluent.ksql.metrics:type=ksql-engine-query-stats
+- io.confluent.ksql.metrics:type=_confluent-ksql-engine-query-stats
 rules:
-- pattern : 'io.confluent.ksql.metrics<type=ksql-engine-query-stats>([^:]+):'
+- pattern : 'io.confluent.ksql.metrics<type=_confluent-ksql-engine-query-stats>([^:]+):'
   name: "cp_ksql_server_metrics_$1"
